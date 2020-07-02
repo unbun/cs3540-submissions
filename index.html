@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <style>
-    .subtitle {
+<head>
+  <style>
+    .footer {
       position: fixed;
       bottom: 0;
       width: 100%;
@@ -11,31 +11,31 @@
       text-align: center;
       background-color: #1EAED3;
       color: white;
+      padding:20px;
     }
-    </style>
-
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>MCA1_HussainUnnas</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Build2.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body>
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">MCA1_HussainUnnas</div>
-      </div>
+  </style>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Unity WebGL Player | MCA1_HussainUnnas</title>
+  <link rel="shortcut icon" href="TemplateData/favicon.ico">
+  <link rel="stylesheet" href="TemplateData/style.css">
+  <script src="TemplateData/UnityProgress.js"></script>
+  <script src="Build/UnityLoader.js"></script>
+  <script>
+    var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Build.json", {onProgress: UnityProgress});
+  </script>
+</head>
+<body>
+  <div class="webgl-content">
+    <div id="unityContainer" style="width: 960px; height: 600px"></div>
+    <div class="footer">
+      <div class="webgl-logo"></div>
+      <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+      <div class="title">MCA1_HussainUnnas</div>
     </div>
-    <div class="subtitle">
-        <p>Press <em>Space</em> to start</p>
-    </div>
-  </body>
+  </div>
+  <div class="footer">
+    Press <em>Space</em> to start.
+  </div>
+</body>
 </html>
